@@ -128,7 +128,7 @@ export default function Hero() {
         </div>
       </div>
 
-        <div className="absolute bottom-6 sm:bottom-8 lg:bottom-10 left-0 right-0 z-20">
+        <div className="absolute bottom-12 sm:bottom-8 lg:bottom-10 left-0 right-0 z-20">
         <div className="max-w-[1800px] mx-auto px-4 sm:px-6 lg:px-16 flex items-center justify-between">
           <motion.div
             initial={{ opacity: 0 }}

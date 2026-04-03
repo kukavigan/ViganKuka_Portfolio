@@ -25,14 +25,10 @@ const experience = [
 
 export default function ExperienceSection() {
   return (
-    <section className="relative bg-black text-white py-28 md:py-36">
+    <section className="relative bg-black text-white py-20 md:py-36">
       <div className="max-w-[1800px] mx-auto px-6 lg:px-16">
-        
-        {/* TOP BORDER */}
-        <div className="border-t border-white/10 pt-12">
-
+        <div className="border-t border-white/10 pt-10 md:pt-12">
           <div className="grid grid-cols-1 lg:grid-cols-[0.3fr_1fr] gap-10 lg:gap-20">
-
             {/* LEFT TITLE */}
             <div>
               <p className="text-sm uppercase tracking-[0.22em] text-white/40">
@@ -49,10 +45,10 @@ export default function ExperienceSection() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true, margin: '-80px' }}
                   transition={{ duration: 0.7, delay: index * 0.08 }}
-                  className="grid grid-cols-2 md:grid-cols-3 items-center py-6 border-b border-white/10"
+                  className="grid grid-cols-1 md:grid-cols-3 gap-2 md:gap-6 py-5 md:py-6 border-b border-white/10"
                 >
                   {/* ROLE */}
-                  <div className="text-white/90 text-base md:text-lg">
+                  <div className="text-white/90 text-[24px] leading-tight md:text-lg">
                     {item.role}
                   </div>
 
@@ -62,18 +58,13 @@ export default function ExperienceSection() {
                   </div>
 
                   {/* PERIOD */}
-                  <div className="text-right text-white/50 text-base md:text-lg">
+                  <div className="text-white/50 text-sm md:text-base md:text-right">
                     {item.period}
                   </div>
                 </motion.div>
               ))}
-
-              {/* VIEW ALL */}
-              <div className="pt-6">
-              </div>
             </div>
           </div>
-
         </div>
       </div>
     </section>
