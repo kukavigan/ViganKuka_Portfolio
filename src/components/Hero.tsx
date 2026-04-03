@@ -128,28 +128,41 @@ export default function Hero() {
         </div>
       </div>
 
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 1.2, duration: 0.9 }}
-        className="absolute bottom-10 left-10 lg:left-24 flex items-center gap-3 text-white/70 text-base font-medium"
-      >
-        <Globe size={20} strokeWidth={1.7} className="text-white/80" />
-        <span>Based in Prishtina, Kosovo</span>
-      </motion.div>
+        <div className="absolute bottom-6 sm:bottom-8 lg:bottom-10 left-0 right-0 z-20">
+        <div className="max-w-[1800px] mx-auto px-4 sm:px-6 lg:px-16 flex items-center justify-between">
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 1.2, duration: 0.9 }}
+            className="flex items-center gap-2 sm:gap-3 text-white/70 text-xs sm:text-sm lg:text-base font-medium"
+          >
+            <Globe
+              size={16}
+              strokeWidth={1.7}
+              className="text-white/80 sm:w-[18px] sm:h-[18px] lg:w-5 lg:h-5 shrink-0"
+            />
+            <span className="leading-none sm:leading-normal whitespace-nowrap">
+              Based in Prishtina, Kosovo
+            </span>
+          </motion.div>
 
-      <motion.a
-        href="https://www.linkedin.com/in/vigan-kuka-49a946179/"
-        target="_blank"
-        rel="noreferrer"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 1.2, duration: 0.9 }}
-        className="absolute bottom-10 right-10 lg:right-24 flex items-center gap-3 text-white/70 text-base font-medium hover:text-white transition"
-      >
-        <Linkedin size={20} strokeWidth={1.7} className="text-white/80" />
-        <span></span>
-      </motion.a>
+          <motion.a
+            href="https://www.linkedin.com/in/vigan-kuka-49a946179/"
+            target="_blank"
+            rel="noreferrer"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 1.2, duration: 0.9 }}
+            className="flex items-center justify-center text-white/70 hover:text-white transition shrink-0"
+          >
+            <Linkedin
+              size={17}
+              strokeWidth={1.7}
+              className="text-white/80 sm:w-[18px] sm:h-[18px] lg:w-5 lg:h-5"
+            />
+          </motion.a>
+        </div>
+      </div>
     </section>
   );
 }
