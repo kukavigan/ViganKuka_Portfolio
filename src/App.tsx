@@ -12,7 +12,7 @@ function App() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-  <BrowserRouter>
+  <BrowserRouter basename={import.meta.env.BASE_URL}>
     <ScrollToTop/>
     <div className="min-h-screen bg-black antialiased">
       <Navbar onMenuToggle={() => setMobileMenuOpen(true)} />
